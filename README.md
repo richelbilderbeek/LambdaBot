@@ -1,0 +1,2 @@
+# LambdaBot
+C++ IRC bot
