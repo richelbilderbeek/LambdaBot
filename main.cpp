@@ -3,16 +3,18 @@
 #include <cstdio>
 #include "ircbot.h"
 
-const std::vector<std::string> Respond(const std::string& s);
+std::vector<std::string> Respond(const std::string& s);
 
 int main()
 {
-  const std::string bot_name = "speaker";
+  const std::string bot_name = "violet";
   const std::string server_name = "irc.zeronode.net";
-  const std::string channel_name = "#Hive5";
-  const int port = 6697;
+  const std::string channel_name = "#Hive6";
+  const int port = 6667; //No SSH
+  //const int port = 6697; //With SSH, but then the IRC bot does not work?
 
-  IrcBot(
+  //my_bot will be alive the entire program
+  const IrcBot my_bot(
     bot_name,
     channel_name,
     port,
@@ -21,16 +23,10 @@ int main()
   );
 }
 
-const std::vector<std::string> Respond(const std::string& s)
+std::vector<std::string> Respond(const std::string& s)
 {
   //Display the raw message to respond to
-  std::cout << s << std::endl;
-
-  //Say the message with espeak
-  {
-    //const std::string cmd = "espeak \"" + s + '\"';
-    //std::system(cmd.c_str());
-  }
+  std::cout << s << '\n';
 
   //Generate a response
   std::vector<std::string> v;
