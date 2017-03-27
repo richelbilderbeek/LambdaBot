@@ -37,6 +37,7 @@ script:
   # Console
   - qmake -qt=qt5 LambdaBot.pro
   - make debug
+  - ./LambdaBot --profile
   # cppcheck
   - cppcheck --quiet --error-exitcode=1 . 
   # Get code coverage

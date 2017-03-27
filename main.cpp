@@ -5,7 +5,7 @@
 
 std::vector<std::string> Respond(const std::string& s);
 
-int main()
+int main(int argc, char *[])
 {
   const std::string bot_name = "violet";
   const std::string server_name = "irc.zeronode.net";
@@ -19,7 +19,8 @@ int main()
     channel_name,
     port,
     server_name,
-    Respond
+    Respond,
+    argc > 1
   );
 }
 
