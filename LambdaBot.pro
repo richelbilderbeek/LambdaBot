@@ -1,8 +1,8 @@
-include(../RibiClasses/CppAbout/CppAbout.pri)
-include(../RibiClasses/CppFileIo/CppFileIo.pri)
-include(../RibiClasses/CppHelp/CppHelp.pri)
-include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
-include(../RibiClasses/CppIrcBot/CppIrcBot.pri)
+#include(../RibiClasses/CppAbout/CppAbout.pri)
+#include(../RibiClasses/CppFileIo/CppFileIo.pri)
+#include(../RibiClasses/CppHelp/CppHelp.pri)
+#include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
+include(ircbot.pri)
 
 SOURCES += main.cpp
 

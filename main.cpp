@@ -12,6 +12,7 @@ int main(int argc, char *[])
   const std::string channel_name = "#Hive6";
   const int port = 6667; //No SSH
   //const int port = 6697; //With SSH, but then the IRC bot does not work?
+  bool do_profile{argc > 1};
 
   //my_bot will be alive the entire program
   const IrcBot my_bot(
@@ -20,7 +21,7 @@ int main(int argc, char *[])
     port,
     server_name,
     Respond,
-    argc > 1
+    do_profile
   );
 }
 
