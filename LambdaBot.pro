@@ -1,14 +1,7 @@
-#include(../RibiClasses/CppAbout/CppAbout.pri)
-#include(../RibiClasses/CppFileIo/CppFileIo.pri)
-#include(../RibiClasses/CppHelp/CppHelp.pri)
-#include(../RibiClasses/CppMenuDialog/CppMenuDialog.pri)
 include(ircbot.pri)
 
 SOURCES += main.cpp
 
-# C++14
-CONFIG += c++14
-QMAKE_CXXFLAGS += -std=c++14
 
 # High warning levels
 # Qt does not go well with -Weffc++
@@ -59,11 +52,3 @@ QMAKE_CXXFLAGS += -Wno-unused-variable
 #   BOOST_DEFINE_MATH_CONSTANT(half, 5.000000000000000000000000000000000000e-01, "5.00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e-01")
 #   ^
 QMAKE_CXXFLAGS += -fext-numeric-literals
-
-message(Host name: $$QMAKE_HOST.name)
-contains(QMAKE_HOST.name,fwn-biol-132-102) {
-  message("Host is university computer in my office")
-  QMAKE_CXX = g++-5
-  QMAKE_LINK = g++-5
-  QMAKE_CC = gcc-5
-}
