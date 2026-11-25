@@ -1,0 +1,6 @@
+Bilderbeek's
+Codecov
+LambdaBot
+Richèl
+codecov
+io
