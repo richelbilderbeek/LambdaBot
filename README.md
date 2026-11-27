@@ -1,11 +1,8 @@
 # LambdaBot
 
-[Go to the nicely rendered website](https://richelbilderbeek.github.io/LambdaBot/).
+[![Codecov](https://codecov.io/gh/richelbilderbeek/LambdaBot/branch/main/graph/badge.svg)](https://codecov.io/gh/richelbilderbeek/LambdaBot)
 
-Branch|[![Travis CI logo](TravisCI.png)](https://travis-ci.org)|[![Codecov logo](Codecov.png)](https://www.codecov.io)
----|---|---
-master|[![Build Status](https://travis-ci.org/richelbilderbeek/LambdaBot.svg?branch=master)](https://travis-ci.org/richelbilderbeek/LambdaBot)|[![codecov.io](https://codecov.io/github/richelbilderbeek/LambdaBot/coverage.svg?branch=master)](https://codecov.io/github/richelbilderbeek/LambdaBot/branch/master)
-develop|[![Build Status](https://travis-ci.org/richelbilderbeek/LambdaBot.svg?branch=develop)](https://travis-ci.org/richelbilderbeek/LambdaBot)|[![codecov.io](https://codecov.io/github/richelbilderbeek/LambdaBot/coverage.svg?branch=develop)](https://codecov.io/github/richelbilderbeek/LambdaBot/branch/develop)
+[Go to the nicely rendered website](https://richelbilderbeek.github.io/LambdaBot/).
 
 C++ IRC bot.
 
